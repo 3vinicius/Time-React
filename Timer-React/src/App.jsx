@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       {currentDay}/{currentHours}/{currentMinuts}/{currentSeconds}
       
-    </div>
+      </div>
   )
 }
 
