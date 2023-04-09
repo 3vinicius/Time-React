@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Clock } from './Components/Clock';
 
 function App() {
   const [currentDay,setCurrentDay] = useState(0)
@@ -21,9 +22,11 @@ function App() {
 
   return (
     <div className="App">
-      {currentDay}/{currentHours}/{currentMinuts}/{currentSeconds}
-      
-      </div>
+      <section>
+      <Clock days={currentDay} hours={currentHours} minutes={currentMinuts} secundes={currentSeconds} />
+      <div className='container-myImage'><div className='myImage' alt="background"></div></div>
+      </section>
+    </div>
   )
 }
 
