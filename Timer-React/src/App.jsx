@@ -22,10 +22,36 @@ function App() {
 
   return (
     <div className="App">
+
+
+
+      <div>
+          <p className='title'>My clock</p>
+      </div>
+
+
+
       <section className='section-myImage'>
-      <Clock days={currentDay} hours={currentHours} minutes={currentMinuts} secundes={currentSeconds} />
-      <div className='container-myImage'><div className='myImage' alt="background"></div></div>
+        
+        <Clock days={currentDay} hours={currentHours} minutes={currentMinuts} secundes={currentSeconds} />
+        
       </section>
+
+
+          <div className='myImage' alt="background">
+            <div className='imgs'> 
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+            <div className='imgs'>
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+            <div className='imgs'>
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+          </div>
+
+
+  
     </div>
   )
 }
