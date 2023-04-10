@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <section>
+      <section className='section-myImage'>
       <Clock days={currentDay} hours={currentHours} minutes={currentMinuts} secundes={currentSeconds} />
       <div className='container-myImage'><div className='myImage' alt="background"></div></div>
       </section>

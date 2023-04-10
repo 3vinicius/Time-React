@@ -11,6 +11,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
@@ -67,10 +69,20 @@ button:focus-visible {
   }
 }
 
+.section-myImage{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  align-items: end;
+  align-content: space-between;
+  justify-items: center;
+}
+
 .myImage{
-  position: inherit;
-  width: 80vw;
-  height: 70vh;
+  display: block;
+  width: 100vw;
+  height: 10vh;
   background-image: url(images/pattern-hills.svg);
   background-repeat: no-repeat;
   background-size: cover;
