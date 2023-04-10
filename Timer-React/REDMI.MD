@@ -12,8 +12,9 @@
 
 
 ### Todo list
-- Centralize div Clock  in container Clock
-- Add Title white
-- Add response large width
-- add background in container clock
 - add icon 
+- Add response large width
+- My components responsive in width and height
+- ~~add background in container clock~~
+- ~~Centralize div Clock  in container Clock~~
+- ~~Add Title white~~
