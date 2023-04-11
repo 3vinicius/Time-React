@@ -2,7 +2,6 @@ import './style.css'
 
 export function Clock({days,hours,minutes,secundes}) {
   return(
-  <section className='section-Clock'>
   <div className="container-Clock">
     <div className='div-Clock'>
       <p className='number'>{days}</p>
@@ -21,6 +20,5 @@ export function Clock({days,hours,minutes,secundes}) {
       <p className='bottomText'>Seconds</p>
       </div>
   </div>
-  </section>
   )
 }

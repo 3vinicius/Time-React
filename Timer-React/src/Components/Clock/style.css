@@ -1,10 +1,12 @@
 .container-Clock{
   display: grid;
   grid-template-columns: repeat(1, minmax(150px,200px));
-  grid-template-rows:repeat(4, 100px) ;
-  align-items: center;
-  gap: 20px;
+  grid-template-rows: repeat(4, calc(60px + 10%));
+  align-items: stretch;
+  /* gap: 0px; */
   justify-content: center;
+  align-content: space-evenly;
+  
 }
 
 .div-Clock{
@@ -20,10 +22,11 @@ p.number{
   margin: 0;
   padding: 20px;
   color: hsl(345, 95%, 68%);
-  font-size: 25px;
+  font-size: 30px;
   background-color: hsl(235, 16%, 14%);
   border-radius: 25px;
   box-shadow: 0px 10px 15px hsl(234, 17%, 12%);
+  line-height: calc(4.1vh);
 }
 
 p.bottomText{
@@ -31,4 +34,32 @@ p.bottomText{
   padding: 0px;
   color: hsl(237, 18%, 59%);
   margin-top: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .container-Clock{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px,200px));
+    grid-template-rows: 200px;
+    align-items: center;
+    /* gap: 0px; */
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    
+  }
+  .div-Clock{
+    width: 15vw;
+    text-align: center;
+  }
+  p.number{
+    line-height: 80%;
+    width: 15vw;
+    font-size: 100px;
+  }
+
+  p.bottomText{
+    padding: 0px 20px 0px 20px;
+    width: 15vw;
+    font-size: 20px;
+  }
 }

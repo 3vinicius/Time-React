@@ -30,3 +30,18 @@ p.title{
   height: 100vh;
   align-items: center;
 }
+
+@media screen and (min-width: 700px){
+  p.title{
+    font-size: 150px;
+  }
+  .myImage{
+    height: 10vh;
+    line-height: 10vh;
+  }
+
+  ion-icon{
+    width: 30px;
+    height: 40px;
+  }
+}

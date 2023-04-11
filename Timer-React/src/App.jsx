@@ -31,11 +31,11 @@ function App() {
 
 
 
-      <section className='section-myImage'>
+
         
         <Clock days={currentDay} hours={currentHours} minutes={currentMinuts} secundes={currentSeconds} />
         
-      </section>
+
 
 
           <div className='myImage' alt="background">
